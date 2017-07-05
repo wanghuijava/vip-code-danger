@@ -88,7 +88,7 @@ table td{word-break:break-all;}
 .cliptb td
     ,.cliptb th{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
 .cliptb .expe{text-overflow: clip;}
-.table td{padding:10px;line-height: 29px;border:1px solid #ddd;border-width:1px 0;}
+.table td{padding:10px 4px;line-height: 29px;border:1px solid #ddd;border-width:1px 0;}
 .table thead td{line-height: 39px;font-weight: bold;border-bottom: 1px solid #d7d7d7;}
 .table td.rb{border-right: 1px solid #d7d7d7;}
 .table td.lb{border-left: 1px solid #d7d7d7;}
@@ -184,6 +184,12 @@ fieldset legend{font-weight: bold;margin:0 6px;}
 .tips{padding:.5em 2em;color:#fff;border-radius: 6px;}
 .tips-success{background: #38b44c;}
 .tips-fail{background: #e15050;}
+
+/*row tr*/
+.row-green td{color:green;}
+.row-green a{color:green;}
+.row-red td{color:red;}
+.row-red a{color:red;}
 
 /*label*/
 .label{display: inline-block;padding:0 10px;border:1px solid #83b273;border-radius:4px;color:#429126;background: #cbf9bb;}

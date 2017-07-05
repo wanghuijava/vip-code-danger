@@ -86,7 +86,7 @@ public class ProduceExecuteController {
 		producePlan.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 		
 		now.add(Calendar.MONTH, 1);
-		now.set(Calendar.DAY_OF_MONTH, -1);
+		now.add(Calendar.DAY_OF_MONTH, -1);
 		producePlan.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		
 		ParamPage page = new ParamPage();
@@ -127,7 +127,7 @@ public class ProduceExecuteController {
 		producePlan.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 		
 		now.add(Calendar.MONTH, 1);
-		now.set(Calendar.DAY_OF_MONTH, -1);
+		now.add(Calendar.DAY_OF_MONTH, -1);
 		producePlan.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		
 		ParamPage page = new ParamPage();
@@ -265,7 +265,7 @@ public class ProduceExecuteController {
 			produceExecute.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 			
 			now.add(Calendar.MONTH, 1);
-			now.set(Calendar.DAY_OF_MONTH, -1);
+			now.add(Calendar.DAY_OF_MONTH, -1);
 			produceExecute.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		}
 		
@@ -298,13 +298,13 @@ public class ProduceExecuteController {
 		producePlan.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 		producePlan.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		
-		Page<ProducePlan> producePlanPages = producePlanService.find(producePlan, page2.getPageable());
-		List<ProducePlan> producePlans = producePlanPages.getContent();
+//		Page<ProducePlan> producePlanPages = producePlanService.find(producePlan, page2.getPageable());
+//		List<ProducePlan> producePlans = producePlanPages.getContent();
 		List<ProducePlan> listPlan = new ArrayList<ProducePlan>();
-		for (ProducePlan model : producePlans) {
-			model.setMore();
-			listPlan.add(model);
-		}
+//		for (ProducePlan model : producePlans) {
+//			model.setMore();
+//			listPlan.add(model);
+//		}
 		
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		resultMap.put("result", list);

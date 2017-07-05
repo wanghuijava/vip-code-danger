@@ -34,6 +34,11 @@
 	                    </button>
 	                </div>
 	                </c:if>
+	               	<div class="btn-grp ibm">
+	                    <button type="button" class="btn btn-normal" id="importData" data-resourcetype="ProducePlan" data-importurl="/project/producePlan/import">
+	                        <span class='btn-otr'><span class='btn-inr'>导入</span></span>
+	                    </button>
+	                </div>
 	                <div class="layout search-filter-content" id="js-search-param">
 			            <dl>
 			                <dt style="width:200px">计划实施时间：</dt>
@@ -184,4 +189,5 @@
 	<%@include file="../../inc/footer.jsp" %>
 	<script src="${siteUrl }/js/project/producePlan/producePlan-list.js"></script>
 	<script src="${siteUrl }/js/mysearch.js"></script>
+	<script src="${siteUrl}/js/resource-import.js"></script>
 </html>

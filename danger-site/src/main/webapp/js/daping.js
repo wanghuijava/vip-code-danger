@@ -6,22 +6,16 @@ $(document).ready(function(){
 	//workPlan();
 	//危险作业-今日录入;
 	workExecute();
-	setInterval('workExecute()',1800000);
+	//setInterval('workExecute()',120000);
 	
 
 	//试运投产-当月计划
 	//producePlan()
 	//试运投产-今日录入
 	produceExecute();
-	setInterval('produceExecute()',1800000);
-	
-
-	setInterval('window.location.reload();',10000);
+	//setInterval('produceExecute()',130000);
+	setInterval('window.location.reload()',130000);
 })
-
-function reloadPage(){
-	window.location.reload();
-}
 
 function workPlan(){
 	http.post({
@@ -75,11 +69,11 @@ function workExecute(){
 				var demo = document.getElementById("workexecute-demo");
 				var demo1 = document.getElementById("workexecute-demo1");
 				var demo2 = document.getElementById("workexecute-demo2");
-				if($("#workexecute-demo1").height()>200){
+				if($("#workexecute-demo1").height()>320){
 					demo2.innerHTML=demo1.innerHTML;
 					
 					function Marquee(){
-						if(demo2.offsetTop-demo.scrollTop<=0){
+						if(demo2.offsetHeight-demo.scrollTop<=0){
 							demo.scrollTop-=demo1.offsetHeight;
 						}else{
 							demo.scrollTop++
@@ -144,11 +138,11 @@ function produceExecute(){
 				var demo1 = document.getElementById("produceexecute-demo1");
 				var demo2 = document.getElementById("produceexecute-demo2");
 
-				if($("#produceexecute-demo1").height()>200){
+				if($("#produceexecute-demo1").height()>320){
 					demo2.innerHTML=demo1.innerHTML;
 					
 					function Marquee(){
-						if(demo2.offsetTop-demo.scrollTop<=0){
+						if(demo2.offsetHeight-demo.scrollTop<=0){
 							demo.scrollTop-=demo1.offsetHeight;
 						}else{
 							demo.scrollTop++

@@ -43,7 +43,7 @@ public class ProduceExecute implements Serializable {
 	private String orgName;
 
 	/**
-	 * 危险作业项目计划ID
+	 * 试运投产项目计划ID
 	 */
 	@Column(name = "workPlanId")
 	private String workPlanId;

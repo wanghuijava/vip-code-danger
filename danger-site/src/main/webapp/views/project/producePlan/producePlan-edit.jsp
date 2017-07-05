@@ -53,7 +53,12 @@
 								<tr>
 									<th>作业级别:</th>
 									<td><div class="ipt-case">
-											<input name="param.workLevel" data-label="作业级别" maxlength="10" data-rule="" value="{{workLevel}}">
+											<select name="param.workLevel"  data-label="作业级别" >
+												<option value="">&nbsp;</option>
+												<option value="A" {{if workLevel=='A'}}selected{{/if}}>A</option>
+												<option value="B" {{if workLevel=='B'}}selected{{/if}}>B</option>
+												<option value="C" {{if workLevel=='C'}}selected{{/if}}>C</option>
+											</select>
 										</div></td>		
 									<th><span class="required">*</span>工程概况:</th>
 									<td><div class="ipt-case"><textarea name="param.summary" data-label="工程概况"  data-rule="notnull" maxlength="500">{{summary}}</textarea>

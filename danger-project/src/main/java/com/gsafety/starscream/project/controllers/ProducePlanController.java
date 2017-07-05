@@ -63,7 +63,7 @@ public class ProducePlanController {
 		now.set(Calendar.DAY_OF_MONTH, 1);
 		inv.addModel("nextMonthBegin", DateUtil.formatDate(now.getTime()));
 		now.add(Calendar.MONTH, 1);
-		now.set(Calendar.DAY_OF_MONTH, -1);
+		now.add(Calendar.DAY_OF_MONTH, -1);
 		inv.addModel("nextMonthEnd", DateUtil.formatDate(now.getTime()));
 		return viewUrl + "producePlan-add";
 	}
@@ -81,7 +81,7 @@ public class ProducePlanController {
 		now.set(Calendar.DAY_OF_MONTH, 1);
 		inv.addModel("nextMonthBegin", DateUtil.formatDate(now.getTime()));
 		now.add(Calendar.MONTH, 1);
-		now.set(Calendar.DAY_OF_MONTH, -1);
+		now.add(Calendar.DAY_OF_MONTH, -1);
 		inv.addModel("nextMonthEnd", DateUtil.formatDate(now.getTime()));
 		return viewUrl + "producePlan-edit";
 	}
@@ -207,7 +207,7 @@ public class ProducePlanController {
 			producePlan.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 			
 			now.add(Calendar.MONTH, 1);
-			now.set(Calendar.DAY_OF_MONTH, -1);
+			now.add(Calendar.DAY_OF_MONTH, -1);
 			producePlan.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		}else if(StringUtils.isNotEmpty(producePlan.getThisMonth())){
 			Calendar now = Calendar.getInstance();
@@ -215,7 +215,7 @@ public class ProducePlanController {
 			producePlan.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 			
 			now.add(Calendar.MONTH, 1);
-			now.set(Calendar.DAY_OF_MONTH, -1);
+			now.add(Calendar.DAY_OF_MONTH, -1);
 			producePlan.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		}
 		
@@ -223,6 +223,10 @@ public class ProducePlanController {
 		if (StringUtils.isEmpty(page.getOrderBy())) {
 			page.setDir(PageConstant.DIR_DESC);
 			page.setOrderBy("executeDate");
+		}
+		if (user.isSuperior()) {
+			page.setDir(PageConstant.DIR_ASC);
+			page.setOrderBy("orgCode");
 		}
 
 		Page<ProducePlan> producePlanPages = producePlanService.find(producePlan, page.getPageable());
@@ -268,7 +272,7 @@ public class ProducePlanController {
 			producePlan.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 			
 			now.add(Calendar.MONTH, 1);
-			now.set(Calendar.DAY_OF_MONTH, -1);
+			now.add(Calendar.DAY_OF_MONTH, -1);
 			producePlan.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		//}
 		

@@ -64,15 +64,15 @@
 			        <div class="layout layout-table-header">
 			            <table class="table cliptb">
 			                <colgroup >
-			                    <col width="120">
+			                    <col width="110">
 			                    <c:if test="${superior}">
-			                    <col width="120">
+			                    <col width="100">
 			                    </c:if>
 			                    <col width="250">
-			                    <col width="100">
-			                    <col width="100">
-			                    <col width="100">
-			                    <col>
+			                    <col width="90">
+			                    <col width="90">
+			                    <col width="90">
+			                    <col/>
 			                    <col width="100">
 			                    <col width="100">
 			                    <col width="100">
@@ -106,15 +106,15 @@
 			        <div x-scrollable class="layout layout-table-body cliptb">
 			            <table class="table cliptb" x-checkgrp x-sorttable >
 			                <colgroup >
-			                    <col width="120">
+			                    <col width="110">
 			                    <c:if test="${superior}">
-			                    <col width="120">
+			                    <col width="100">
 			                    </c:if>
 			                    <col width="250">
-			                    <col width="100">
-			                    <col width="100">
-			                    <col width="100">
-			                    <col>
+			                    <col width="90">
+			                    <col width="90">
+			                    <col width="90">
+			                    <col/>
 			                    <col width="100">
 			                    <col width="100">
 			                    <col width="100">
@@ -129,7 +129,7 @@
 			            </table>
 			            <script id="list-tmpl" type="text/html">
 						{{each result as item index}}
-						<tr >
+						<tr class="{{if item.executeState=='已完成'}}row-green{{else }}row-red {{/if}}">
 							<td>{{item.executeDateStr}}</td>
 			                <c:if test="${superior}">
 							<td title="{{item.orgName}}">{{item.orgName}}</td>

@@ -63,7 +63,7 @@ public class WorkPlanController {
 		now.set(Calendar.DAY_OF_MONTH, 1);
 		inv.addModel("nextMonthBegin", DateUtil.formatDate(now.getTime()));
 		now.add(Calendar.MONTH, 1);
-		now.set(Calendar.DAY_OF_MONTH, -1);
+		now.add(Calendar.DAY_OF_MONTH, -1);
 		inv.addModel("nextMonthEnd", DateUtil.formatDate(now.getTime()));
 		return viewUrl + "workPlan-add";
 	}
@@ -81,7 +81,7 @@ public class WorkPlanController {
 		now.set(Calendar.DAY_OF_MONTH, 1);
 		inv.addModel("nextMonthBegin", DateUtil.formatDate(now.getTime()));
 		now.add(Calendar.MONTH, 1);
-		now.set(Calendar.DAY_OF_MONTH, -1);
+		now.add(Calendar.DAY_OF_MONTH, -1);
 		inv.addModel("nextMonthEnd", DateUtil.formatDate(now.getTime()));
 		return viewUrl + "workPlan-edit";
 	}
@@ -207,7 +207,7 @@ public class WorkPlanController {
 			workPlan.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 			
 			now.add(Calendar.MONTH, 1);
-			now.set(Calendar.DAY_OF_MONTH, -1);
+			now.add(Calendar.DAY_OF_MONTH, -1);
 			workPlan.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		}else if(StringUtils.isNotEmpty(workPlan.getThisMonth())){
 			Calendar now = Calendar.getInstance();
@@ -215,7 +215,7 @@ public class WorkPlanController {
 			workPlan.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 			
 			now.add(Calendar.MONTH, 1);
-			now.set(Calendar.DAY_OF_MONTH, -1);
+			now.add(Calendar.DAY_OF_MONTH, -1);
 			workPlan.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		}
 		
@@ -223,6 +223,10 @@ public class WorkPlanController {
 		if (StringUtils.isEmpty(page.getOrderBy())) {
 			page.setDir(PageConstant.DIR_DESC);
 			page.setOrderBy("executeDate");
+		}
+		if (user.isSuperior()) {
+			page.setDir(PageConstant.DIR_ASC);
+			page.setOrderBy("orgCode");
 		}
 
 		Page<WorkPlan> workPlanPages = workPlanService.find(workPlan, page.getPageable());
@@ -268,7 +272,7 @@ public class WorkPlanController {
 			workPlan.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 			
 			now.add(Calendar.MONTH, 1);
-			now.set(Calendar.DAY_OF_MONTH, -1);
+			now.add(Calendar.DAY_OF_MONTH, -1);
 			workPlan.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		//}
 		

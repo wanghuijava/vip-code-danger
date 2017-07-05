@@ -86,7 +86,7 @@ public class WorkExecuteController {
 		workPlan.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 		
 		now.add(Calendar.MONTH, 1);
-		now.set(Calendar.DAY_OF_MONTH, -1);
+		now.add(Calendar.DAY_OF_MONTH, -1);
 		workPlan.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		
 		ParamPage page = new ParamPage();
@@ -127,7 +127,7 @@ public class WorkExecuteController {
 		workPlan.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 		
 		now.add(Calendar.MONTH, 1);
-		now.set(Calendar.DAY_OF_MONTH, -1);
+		now.add(Calendar.DAY_OF_MONTH, -1);
 		workPlan.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		
 		ParamPage page = new ParamPage();
@@ -265,7 +265,7 @@ public class WorkExecuteController {
 			workExecute.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 			
 			now.add(Calendar.MONTH, 1);
-			now.set(Calendar.DAY_OF_MONTH, -1);
+			now.add(Calendar.DAY_OF_MONTH, -1);
 			workExecute.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		}
 		
@@ -298,13 +298,13 @@ public class WorkExecuteController {
 		workPlan.setSearchStartTimeStr(DateUtil.formatDate(now.getTime()));
 		workPlan.setSearchEndTimeStr(DateUtil.formatDate(now.getTime()));
 		
-		Page<WorkPlan> workPlanPages = workPlanService.find(workPlan, page2.getPageable());
-		List<WorkPlan> workPlans = workPlanPages.getContent();
+//		Page<WorkPlan> workPlanPages = workPlanService.find(workPlan, page2.getPageable());
+//		List<WorkPlan> workPlans = workPlanPages.getContent();
 		List<WorkPlan> listPlan = new ArrayList<WorkPlan>();
-		for (WorkPlan model : workPlans) {
-			model.setMore();
-			listPlan.add(model);
-		}
+//		for (WorkPlan model : workPlans) {
+//			model.setMore();
+//			listPlan.add(model);
+//		}
 		
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		resultMap.put("result", list);
