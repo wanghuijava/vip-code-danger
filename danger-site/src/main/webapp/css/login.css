@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+/**
+@author 杨坤
+@description 登录样式
+*/
+.char1{padding:0 .5em;}
+html,body{height:100%;background:#0086ad }
+input{outline: 0;}
+.login-main-bg{height:500px;margin:0 auto;}
+@media screen and (max-width:1900px){
+	.login-main-bg{height:40%;max-height:300px;margin:0 auto;}
+}
+/*hack for ie8*/
+.login-main-bg.small{height:40%;max-height:300px;margin:0 auto;}
+
+.login-case{padding:18px 0;white-space: nowrap;}
+.login-logo{border-right:1px solid #004356;}
+.login-logo-inr{width:639px;height:104px;border-right:1px solid #6abfd9;}
+.login-group{padding:0 58px;text-align: left;}
+.login-ipt{display:block;width:247px;padding-left:20px;height:43px;line-height:42px;background: url(../img/login/login_ipt.png)}
+.login-ipt .ipt{vertical-align: middle;background: none;color:#e9f1f4;text-shadow:0 0 1px #b7d2d9;letter-spacing: 1px;}
+.login-icon{display:inline-block;*display:inline;*zoom:1;margin-right:10px;vertical-align:middle;width:16px;height:16px;background: url(../img/login/login_icon.png);}
+
+.icon-user{background-position: 0 -20px;}
+.focus .icon-user{background-position: 0 0;}
+.icon-pawd{background-position: -31px -20px;}
+.focus .icon-pawd{background-position: -31px 0;}
+
+.btn-login{width:98px;height:98px;*position:relative;border:0;margin:0 23px;background: url(../img/login/login_btn.png);}

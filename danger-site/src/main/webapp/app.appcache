@@ -1,0 +1,15 @@
+CACHE MANIFEST
+#2015/10/31 1
+
+CACHE:
+lib/jquery-1.7.2.min.js 
+lib/json2.js 
+lib/mylib.js 
+lib/template.js 
+img/
+css/
+service/
+favicon.ico
+
+NETWORK:
+*

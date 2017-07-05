@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+/**
+@author 杨坤
+@description 工作台
+*/
+img{vertical-align: middle;}
+h1,h4,p{margin:0 ;}
+html,body{height:100%;background: #004e8f url(../img/workbench/wb_bg2.png) top center repeat-x;padding:0;margin:0;}
+.wbbg{overflow:auto;height:100%;background: url(../img/workbench/wb_bg1.png) repeat;}
+
+.logo{display:inline-block;width:613px;height:74px;margin:70px 0px 5px 0px;background: url(../img/workbench/wb_logo.png) center center no-repeat;text-indent:-999em;}
+.wrapper{width:1330px;margin:0 auto;padding:0;}
+
+.wb-group{overflow:hidden;overflow:visible\9;font-size:0;}
+.wb-box{position:relative;font-size:16px;height:316px;padding:16px 25px;color:#fff;text-decoration: none;text-align:center;}
+.wb-box a{color:#fff;text-decoration: none;font-size:24px;}
+.wb-box label{position:relative;font-weight: bold;top:210px;}
+.wb-box .links{position: absolute;left:9px;bottom:27px;right:12px;}
+.wb-box .split{margin:0 8px;font-size:24px;}
+.wb-box1{width:199px;background: url(../img/workbench/wb1.png) no-repeat;}
+.wb-box2{width:199px;margin-left:4px;background: url(../img/workbench/wb2.png) no-repeat;}
+.wb-box3{width:526px;background: url(../img/workbench/wb3.png) no-repeat;}
+.wb-box4{width:199px;background: url(../img/workbench/wb4.png) no-repeat;}
+.wb-box5{width:199px;margin-left:4px;background: url(../img/workbench/wb5.png) no-repeat;}
+.wb-box6{width:526px;background: url(../img/workbench/wb6.png) no-repeat;}
+.wb-box7{width:199px;background: url(../img/workbench/wb7.png) no-repeat;}
+.wb-box7 label{top:200px;line-height:40px;}
+
+.weather-icon{padding:27px 0 40px 0;}
+.weather-icon img{height: 84px;}
+.weather-info{line-height: 2;}
+.weather-info em{font-style: normal;margin-left:6px;}
+.weather-info .warning{display:inline-block;width:78px;line-height:22px;margin:0 4px;background: url(../img/workbench/wb_warning.png) center center no-repeat;}
+.search-case{margin:86px 0 0 62px;}
+.search-case b{display: block;width:56px;height:26px;background: url(../img/workbench/wb_search.png) no-repeat;}
+.search-ipt-case{width:398px;height:43px;line-height: 43px;margin:20px 0;background: url(../img/workbench/search_ipt.png) no-repeat;}
+.search-ipt-case .ipt{width:350px;margin:0 0 0 10px;color:#fff;}
+.search-ipt-case .btn{width:23px;height:23px;background: url(../img/workbench/search_btn.png) no-repeat;}
+*::-webkit-input-placeholder{color:#fff;}

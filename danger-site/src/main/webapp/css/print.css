@@ -1,0 +1,4 @@
+*{pointer-events: none;}
+html,body{background: #fff;overflow: auto;}
+.noprint,.aui_outer{display: none;}
+.print-hidden{visibility: hidden;}

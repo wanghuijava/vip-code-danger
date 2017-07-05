@@ -1,0 +1,169 @@
+@charset 'UTF-8';
+/**
+@author 杨坤
+@description 图标部分
+*/
+.icon{display: inline-block;background: url(../img/icon.png) no-repeat;vertical-align: middle;}
+.menu .icon{width:18px;height:18px;margin-right:4px;background-image: url(../img/menu_icon.png);vertical-align: -2px;}
+.icon18{width: 18px;height: 18px;}
+.icon24{width: 24px;height: 24px;}
+.icon28{width:28px;height: 28px;}
+.icon48{width:48px;height: 48px;}
+.btn .icon{width: 20px;height: 20px;}
+
+.icon-sub-type{background-position: 0 -357px;}
+.icon-home{background-position: 5px -867px}
+.icon-menu{background-position: -62px -868px;}
+.icon-add{background-position: -5px -165px;}
+.icon-mdelete{background-position: -62px -178px;}
+.icon-export{background-position: -114px -178px;}
+.icon-save{background-position: -153px -165px;}
+
+.icon-edit{background-position: -83px -103px;}
+a:hover .icon-edit{background-position: -164px -103px;;}
+.icon-delete{background-position: -124px -103px;}
+a:hover .icon-delete{background-position: -205px -103px;}
+
+/*数据维护*/
+.icon-risk{background-position: -467px -232px}
+.active .icon-risk{background-position: -467px -269px}
+.icon-defobj{background-position: 0 0 ;}
+.active .icon-defobj{background-position: 0 -31px ;}
+.icon-danger{background-position: -36px 0;}
+.active .icon-danger{background-position: -36px -31px;}
+
+.icon-expert{background-position: -255px -231px ;}
+.active .icon-expert{background-position: -255px -269px ;}
+.icon-asylum{background-position: 0 -231px ;}
+.active .icon-asylum{background-position: 0 -269px ;}
+.icon-rescue{background-position: -36px -231px ;}
+.active .icon-rescue{background-position: -36px -269px ;}
+.icon-material{background-position: -180px -231px ;}
+.active .icon-material{background-position: -180px -269px ;}
+.icon-people{background-position: -36px -231px ;}
+.active .icon-people{background-position: -36px -269px ;}
+.icon-financial{background-position: -36px -231px ;}
+.active .icon-financial{background-position: -36px -269px ;}
+.icon-resource{background-position: -292px -231px ;}
+.active .icon-resource{background-position: -292px -269px ;}
+.icon-knowledge{background-position: -36px -231px ;}
+.active .icon-knowledge{background-position: -36px -269px ;}
+
+.icon-warehouse{background-position: -327px -231px;}
+.active .icon-warehouse{background-position: -327px -269px ;}
+.icon-enterprise{background-position: -145px -231px;}
+.active .icon-enterprise{background-position: -145px -269px ;}
+.icon-health{background-position: -219px -231px;}
+.active .icon-health{background-position: -219px -269px ;}
+.icon-tel-resouce{background-position: -108px -231px;}
+.active .icon-tel-resouce{background-position: -108px -269px ;}
+
+.icon-pf{background-position: -501px -232px;}
+.active .icon-pf{background-position: -501px -269px;}
+.icon-people{background-position: -393px -232px;}
+.active .icon-people{background-position: -393px -269px ;}
+.icon-financial{background-position: -360px -232px;}
+.active .icon-financial{background-position: -360px -269px ;}
+.icon-knowledge{background-position: -428px -232px;}
+.active .icon-knowledge{background-position: -428px -269px ;}
+
+/*应急值守*/
+.icon-msgin{background-position: -73px -480px;}
+.active .icon-msgin{background-position: -73px -517px ;}
+.icon-duty{background-position: -145px -480px;}
+.active .icon-duty{background-position: -145px -519px ;}
+.icon-document{background-position: 0px -480px;}
+.active .icon-document{background-position: 0 -517px ;}
+.icon-leader{background-position: -38px -480px;}
+.active .icon-leader{background-position: -38px -517px ;}
+
+/*预案管理*/
+.icon-epp{background-position: -36px -314px;}
+.active .icon-epp{background-position: -36px -355px;}
+.icon-epp-sub{background-position: 0 -314px;}
+.active .icon-epp-sub{background-position: 0 -355px;}
+.icon-epp-stat{background-position: -73px -314px;}
+.active .icon-epp-stat{background-position: -73px -355px;}
+
+/*统计*/
+.icon-stat-special{background-position: -255px -144px;}
+.active .icon-stat-special{background-position: -255px -184px;}
+.icon-stat-event{background-position: -145px -143px;}
+.active .icon-stat-event{background-position: -145px -183px;}
+.icon-stat-epp{background-position: -218px -143px;}
+.active .icon-stat-epp{background-position: -218px -184px;}
+.icon-stat-risk{background-position: -36px -143px;}
+.active .icon-stat-risk{background-position: -36px -183px;}
+.icon-stat-team{background-position: -73px -143px;}
+.active .icon-stat-team{background-position: -73px -183px;}
+.icon-stat-resouce{background-position: 0 -143px;}
+.active .icon-stat-resouce{background-position: 0 -183px;}
+.icon-stat-equip{background-position: -180px -143px;}
+.active .icon-stat-equip{background-position: -180px -183px;}
+.icon-stat-update{background-position: -108px -143px;}
+.active .icon-stat-update{background-position: -108px -183px;}
+
+.v-menu .icon{display:block;width: 36px;height:36px;margin:0 auto;background-image: url(../img/menu_icon.png);}
+.icon-danger-b{background-position: -682px -679px;}
+.active .icon-danger-b{background-position: -682px -847px;}
+.icon-defobj-b{background-position: -609px -612px;}
+.active .icon-defobj-b{background-position: -609px -770px;}
+.icon-expert-b{background-position: -474px -679px;}
+.active .icon-expert-b{background-position: -474px -847px;}
+.icon-expert-group-b{background-position: -541px -679px;}
+.active .icon-expert-group-b{background-position: -541px -847px;}
+.icon-warehouse-b{background-position: -141px -612px;}
+.active .icon-warehouse-b{background-position: -141px -770px;}
+.icon-people-b{background-position: -754px -610px}
+.active .icon-people-b{background-position: -754px -768px}
+.icon-financial-b{background-position: -682px -610px}
+.active .icon-financial-b{background-position: -682px -768px}
+.icon-enterprise-b{background-position: -541px -612px;}
+.active .icon-enterprise-b{background-position: -541px -770px;}
+.icon-health-b{background-position: -8px -679px;}
+.active .icon-health-b{background-position: -8px -847px;}
+.icon-telphone-b{background-position: -474px -612px;}
+.active .icon-telphone-b{background-position: -474px -770px;}
+.icon-trans-b{background-position: -73px -679px;}
+.active .icon-trans-b{background-position: -73px -847px;}
+.icon-case-b{background-position: -8px -612px;}
+.active .icon-case-b{background-position: -8px -770px;}
+.icon-knowledge-b{background-position: -274px -679px;}
+.active .icon-knowledge-b{background-position: -274px -847px;}
+.icon-law-b{background-position: -274px -612px;}
+.active .icon-law-b{background-position: -274px -770px;}
+.icon-dutytable-b{background-position: -341px -679px;}
+.active .icon-dutytable-b{background-position: -341px -847px;}
+.icon-dutyplan-b{background-position: -408px -612px;}
+.active .icon-dutyplan-b{background-position: -408px -770px;}
+.icon-holiday-b{background-position: -341px -610px;}
+.active .icon-holiday-b{background-position: -341px -768px;}
+.icon-stat-b{background-position: -408px -679px;}
+.active .icon-stat-b{background-position: -408px -847px;}
+.icon-party-b{background-position: -208px -612px;}
+.active .icon-party-b{background-position: -208px -770px;}
+.icon-gov-b{background-position: -208px -679px;}
+.active .icon-gov-b{background-position: -208px -847px;}
+
+.icon-toal-b{background-position: -141px -679px;}
+.active .icon-toal-b{background-position: -141px -847px;}
+.icon-special-b{background-position: -73px -612px;}
+.active .icon-special-b{background-position: -73px -770px;}
+.icon-depart-b{background-position: -609px -679px;}
+.active .icon-depart-b{background-position: -609px -847px;}
+
+/*应急处置*/
+.icon-transact{background-position: 0 -70px;}
+.active .icon-transact{background-position: 0 -105px;}
+.icon-disposal{background-position: -36px -70px;}
+.active .icon-disposal{background-position: -36px -105px;}
+.icon-risk-ays{background-position: -73px -70px;}
+.active .icon-risk-ays{background-position: -73px -105px;}
+.icon-guarantee{background-position: -108px -70px;}
+.active .icon-guarantee{background-position: -108px -105px;}
+.icon-scheme{background-position: -145px -70px;}
+.active .icon-scheme{background-position: -145px -105px;}
+.icon-key{background-position:-180px -143px}
+.active .icon-key{background-position: -180px -183px}
+.icon-dispatch{background-position:-218px -70px}
+.active .icon-dispatch{background-position:-218px -105px}

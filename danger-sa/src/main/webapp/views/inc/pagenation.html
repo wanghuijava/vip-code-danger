@@ -1,0 +1,57 @@
+{{if page&&page.total>0}}
+<div class="pager" data-total="{{ceil((page.total)/page.count)}}">
+    <label class="ibm">{{page.start+1}}/{{ceil((page.total)/page.count)}}页,共{{page.total}}条</label>
+    
+    {{if page.start!=0}}
+    <a href="javascript:;" data-start="0" class="first"><em><i></i></em></a>
+    {{/if}}
+    
+    {{if page.start>0}}
+    <a href="javascript:;" data-start="{{page.start-1}}" class="prev"><em><i></i></em></a>
+    {{/if}}
+    
+    {{if page.start-3>=0}}
+    <span><em><i>···</i></em></span>
+	{{/if}}
+
+	{{if page.start-1>0}}
+    <a href="javascript:;" data-start="{{page.start-2}}">
+    <em><i>{{page.start-1}}</i></em>
+    </a>
+    {{/if}}
+    {{if page.start>0}}
+    <a href="javascript:;" data-start="{{page.start-1}}">
+    <em><i>{{page.start}}</i></em>
+    </a>
+    {{/if}}
+    <a href="javascript:;" class="current" data-start="{{page.start}}">
+    <em><i>{{page.start+1}}</i></em>
+    </a>
+    {{if (page.start+2)<=ceil((page.total)/page.count)}}
+    <a href="javascript:;" data-start="{{page.start+1}}">
+    <em><i>{{page.start+2}}</i></em>
+    </a>
+    {{/if}}
+    {{if (page.start+3)<=ceil((page.total)/page.count)}}
+    <a href="javascript:;" data-start="{{page.start+2}}">
+    <em><i>{{page.start+3}}</i></em>
+    </a>
+    {{/if}}
+    
+	{{if ceil((page.total)/page.count)-page.start-3>0}}
+    <span><em><i>···</i></em></span>
+    {{/if}}
+    
+    {{if page.start<ceil((page.total)/page.count)-1}}
+    <a data-start="{{page.start+1}}" href="javascript:;" class="next"><em><i></i></em></a>
+    {{/if}}
+    {{if page.start!=ceil((page.total)/page.count)-1}}
+    <a data-start="{{ceil((page.total)/page.count)-1}}" href="javascript:;" class="last"><em><i></i></em></a>
+    {{/if}}
+    
+    {{if ceil((page.total)/page.count)>0}}
+    <input class="ipt" type="text" />
+    <input class="btn" type="submit" value="确定" ng-click="toPage()">
+    {{/if}}
+</div>
+{{/if}}

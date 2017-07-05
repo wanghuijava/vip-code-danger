@@ -1,0 +1,139 @@
+@charset 'UTF-8';
+/**
+@author 杨坤
+@description 布局部分
+*/
+
+/*大屏展示页*/
+.index-daping.center{width:99%;height:45%;margin:10px;float:left}
+.index-daping.left{width:48%;height:45%;margin:10px;float:left}
+.index-daping.right{width:48%;height:45%;margin:10px;float:right}
+.index-daping-main{top: 60px; left: 0; right: 0; bottom: 0;}
+.index-daping-divcontent{border:2px solid #dddada;height:90%;}
+
+.layout{position: absolute;}
+.fixed-layout{position: fixed;z-index: 1100;}
+.layout-header{top:0;left:0;right:0;height:48px;z-index:18;}
+.layout-menu{top:48px;left:0;right:0;height:53px;border-bottom:1px solid #d7d7d7;}
+.layout-main{top:102px;left:0;right:0;bottom:0;}
+.layout-main-nmu{top:48px;left:0;right:0;bottom:0;}
+.layout-full
+,.layout-full-db{overflow:hidden;top:0;left:0;right:0;bottom:0;width:100%;height:100%;}
+iframe.layout-full{width:100%;height:100%;}
+body > .layout-full {min-width:1024px;}
+.layout-content{left:0;right:0;top:0;bottom:0;}
+
+.layout-search{top:0;left:0;right:0;height:57px;}
+.layout-search-result{top:67px;left:22px;right:22px;bottom:10px;}
+.layout-search-result.full-layout{top:57px;left:0;right:0;bottom:0;}
+.layout-search-result-t{top:67px;left:0;right:0;bottom:72px;}
+.layout-search-result-t-sub{left:0;right:0;height:60px;bottom:0;}
+
+/*弹框布局*/
+.dialog-body .layout-search
+	,.dialog-body .layout-search-result-t-sub{display: none;}
+.dialog-body .layout-search-result-t{top:0;bottom:0;}
+
+.layout-table-header{top: 0;left:0;right:0;height:49px;}
+.layout-table-body{top: 60px;left:0;right:0;bottom:50px;}
+.layout-table-body-ntp{top: 0px;left:0;right:0;bottom:50px;}
+.layout-table-footer{bottom: 0;left:0;right:0;height:50px;border-top:1px solid #d7d7d7;}
+
+/*检索子系统*/
+.layout-js-side{top:0;left:0;bottom:0;width:400px;border-right:1px solid #d7d7d7;z-index:1002;-webkit-transition:all .5s;transition:all .5s;}
+.collapsed .layout-js-side{left:-401px;}
+.layout-js-content{top:0;right:0;left:401px;bottom:0;-webkit-transition:all .5s;transition:all .5s;}
+.collapsed .layout-js-content{left:0;}
+
+.layout-js-search{top:0;left:0;right:0;height:71px;border-bottom:1px solid #d7d7d7;}
+.layout-js-sort{/*top:72px;*/top:58px;left:0;right:0;border-bottom:1px solid #d7d7d7;}
+.layout-js-conent{/*top:105px;*/top:106px;left:0;right:0;bottom:0;}
+.layout-jst-conent{top:72px;left:0;right:0;bottom:0;}
+.layout-js-pager{left:0;bottom:0;right:0;height:48px;border-top:1px solid #d7d7d7;}
+/*
+	交通运输
+*/
+.layout-js-block{top:0;left:0;bottom:0;right:300px;border-right:1px solid #d7d7d7;}
+.layout-js-block-sub{top:0;right:0;bottom:0;width:300px;background: #e4e4e4;}
+
+/*应急值守*/
+.layout-sub-menu{top:0;left:0;bottom:0;width:98px;}
+.layout-sub-content{top:0;left:98px;bottom:0;right:0;}
+.layout-duty-side{top:0;right:0;width:272px;bottom:0;}
+.layout-duty-content{top:0;left:0;right:272px;bottom:0;border-right: 1px solid #d7d7d7;}
+.layout-duty-side-search{top:0;left:0;right:0;height:64px;}
+.layout-duty-main-org{top:64px;left:0;right:0;height:45px;}
+.layout-duty-org-list{top:109px;left:0;right:0;bottom:0;}
+.layout-duty-org-list-s{top:64px;left:0;right:0;bottom:0;}
+.layout-calendar-header{left:0;top:0;right:0;height:64px;}
+.layout-calendar-content{top:64px;left:0;right:0;bottom:0;}
+
+/*通讯录*/
+.layout-org-panel{top:0;left:0;right:0;height:100px;}
+.layout-orglist-panel{top:100px;left:0;right:0;bottom:0;}
+.layout-contact-side{top:0;right:0;width:272px;bottom:0;}
+.layout-contact-content{top:0;left:0;right:272px;bottom:0;border-right: 1px solid #d7d7d7;}
+.layout-contact-side-search{top:0;left:0;right:0;height:57px;}
+.layout-contact-main-org{top:57px;left:0;right:0;height:45px;}
+.layout-contact-org-list{top:102px;left:0;right:0;bottom:0;}
+
+/*文档管理*/
+.layout-search-result-doc{top:67px;left:22px;right:382px;bottom:10px;}
+.layout-search-result-doc-side{top:67px;right:22px;bottom:10px;width:350px}
+.layout-common-doc-title{top:0;left:0;right:0;height:46px;}
+.layout-common-doc-list{top:46px;left:0;right:0;bottom:0;border:1px solid #d7d7d7;}
+
+/*应急预案*/
+.layout-epp-view{top:0;left:0;right:0;bottom:50px;}
+.layout-epp-menu{top:57px;left:0;bottom:110px;width:250px;background: #f7f7f7;border-right:1px solid #d7d7d7;border-top:1px solid #d7d7d7;}
+.layout-epp-info{left:0;bottom:0;height:90px;width:250px;background: #f7f7f7;border-right:1px solid #d7d7d7;border-top:1px solid #d7d7d7;}
+.layout-epp-main{top:57px;left:250px;right:0;bottom:0;}
+
+/*领导分工*/
+.layout-leader-side{width:272px;top:0;right:0;bottom:0;z-index:1000;}
+.layout-leader-content{right:272px;top:0;left:0;bottom:0;}
+
+/*数据统计*/
+.layout-tab-handler{top:0;left:0;right:0;height:63px;border-bottom:2px solid #3391db;}
+.layout-tab-content{top:65px;left:0;right:0;bottom:0;}
+
+/*异常页面*/
+.layout-exception{top:50%;left:50%;width:834px;height:536px;margin:-268px -417px;}
+
+/*搜索列表*/
+.layout-search-side{top:0;left:0;bottom:0;width:281px;}
+.layout-search-main{top:0;left:281px;right:376px;bottom:0;}
+.layout-search-map{top:0;right:0;bottom:0;width:376px;border-left:1px solid #d7d7d7;}
+
+/*应急处置*/
+/*应急处置-应急方案*/
+.layout-event-top{top:0;left:0;right:0;height:80px;}
+.layout-event-content{top:80px;left:1em;right:1em;bottom:0;}
+.layout-res-title{top:0;left:0;right:0;height:48px;line-height: 48px;border-bottom:2px solid #3598db;}
+.layout-res-content{top:80px;left:0;right:0;bottom:50px;}
+.layout-res-footer{left:0;right:0;bottom:0;height:50px;line-height: 50px;border-top:1px solid #d7d7d7;}
+.layout-res-menu{top:0;left:0;bottom:0;width:250px;background: #f7f7f7;border-right:1px solid #d7d7d7;}
+.layout-res-menu1{width:100%;background:#ffffff;}
+.layout-res-main{top:0;left:250px;right:0;bottom:0;}
+.layout-res-main1{top:85px;left:0px;right:0;bottom:8px;border:2px solid #d7d7d7;}
+
+/*应急处置-指挥部*/
+.layout-hqm-tree{top:0;left:0;bottom:0;width:300px;border-right:1px solid #d7d7d7}
+.layout-hqm-tree-ipt{top:0;left:0;right:0;height:60px;border-bottom:1px solid #d7d7d7}
+.layout-hqm-tree-body{top:61px;left:0;right:0;bottom:0;}
+.layout-hqm-content{top:0;right:0;bottom:0;left:301px;}
+.layout-response{top:0;left:0;right:0;height:60px;line-height: 60px;border-bottom:1px solid #d7d7d7}
+.layout-response-body{top:61px;left:0;right:0;bottom:0;}
+
+.layout-hq-form{top:0;left:0;right:0;bottom:50px;}
+.layout-hq-form-sub{left:0;right:0;bottom:0;height:50px;line-height:50px;padding:0 1em;border-top:1px solid #d7d7d7;background: #fff;}
+
+/*数据上报与共享*/
+.layout-dataup-side{top:0;left:0;bottom:0;width:202px;border-right:1px solid #d7d7d7;}
+.layout-dataup-content{top:0;right:0;bottom:0;left:203px;}
+.layout-data-main{top:0;left:0;bottom:0;right:300px;}
+.layout-data-sub{top:0;bottom:0;right:0;width:300px;}
+.layout-data-map{overflow:hidden;top:0;left:0;right:0;bottom:300px;}
+.layout-data-table{left:0;right:0;bottom:0;height:300px;}
+.layout-dataup-tab{top:0;left:0;right:0;height:57px;border-bottom:1px solid #d7d7d7;background:#f7f7f7;}
+.layout-dataup-content-notitle .layout-search-result-t{top:0;}

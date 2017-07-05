@@ -1,0 +1,16 @@
+.official-document{font-size: 16px;width: 640px;margin: 0 auto;table-layout: fixed;}
+.official-document caption{font-size: 32px;font-weight: bold;padding: 60px 0 10px 0;}
+.official-document input
+    ,.official-document textarea{padding:0;border:none;}
+.official-document textarea{overflow:hidden;resize: none;}
+.official-document th
+    ,.official-document td{padding:5px 12px;font-weight: normal;}
+.official-document .main-entity{border: 2px solid #000;}
+.main-entity td
+    ,.main-entity th{border:1px solid #000;}
+.main-entity input
+,.main-entity textarea{width: 100%;padding:0;border:none;}
+.file-title td
+    ,.file-title th{border-bottom: none;}
+.file-code td
+    ,.file-code th{border-top: none;}

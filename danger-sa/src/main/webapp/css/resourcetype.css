@@ -1,0 +1,25 @@
+body {
+}
+
+.btn-group>.btn,.btn-group>.dropdown-menu,.btn-group>.popover {
+	font-size: 12px;
+}
+
+.table th,.table td {
+	vertical-align: middle;
+}
+
+.parentid_value{
+	display: none;
+}
+
+.nextLevel {
+	padding-left: 15px;
+}
+
+.prompt_mt{
+	color: red;
+}
+
+.bottomLine{
+}
